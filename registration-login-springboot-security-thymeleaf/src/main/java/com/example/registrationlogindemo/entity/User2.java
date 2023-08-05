@@ -30,6 +30,7 @@ public class User
     private String email;
 
     @Column(nullable=false)
+    @Id
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
